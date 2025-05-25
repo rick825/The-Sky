@@ -16,7 +16,7 @@ const HeroShowcase = () => {
     className="hero-img fade-in"
   />
 
-  <div className="floating-card card-top-left float-up-down">
+  <div className="floating-card card-top-left fade-in-float">
     <PiMonitorBold />
     <div>
       <h4>2K+</h4>
@@ -24,7 +24,7 @@ const HeroShowcase = () => {
     </div>
   </div>
 
-  <div className="floating-card card-top-right float-up-down">
+  <div className="floating-card card-top-right fade-in-float">
     <FaStar />
     <div>
       <h4>4.8</h4>
@@ -32,7 +32,7 @@ const HeroShowcase = () => {
     </div>
   </div>
 
-  <div className="floating-card card-bottom float-up-down">
+  <div className="floating-card card-bottom fade-in-float">
     <FaBullhorn />
     <div>
       <h4>Marketing Expert</h4>
