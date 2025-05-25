@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root {
+  /* Brand Colors (based on gradient & CTA) */
+  --primary-color: #2c003e;          /* Deep Purple (used in headings/buttons) */
+  --secondary-color: #801e8c;        /* Rich Plum (used in gradients & accents) */
+  --accent-color: #b95fbf;           /* Soft Lavender accent */
+  --highlight-color: #e3a7ff;        /* Lighter CTA hover effect */
+
+  /* Backgrounds */
+
+  --light-bg: #ffffff;               /* Clean white background */
+  --lighter-bg: #f5f5f5;             /* Light gray background for cards/sections */
+  --lightest-bg: #fbfbfb;            /* For muted areas */
+ --heading-highlight: #750778;
+
+  /* Text Colors */
+    --primary-text: #1a1a1a;
+  --text-primary: #1a1a1a;           /* Body & paragraph text */
+  --text-secondary: #4b4b4b;         /* Subtext, muted info */
+  --text-muted: #999999;             /* Hints, footnotes */
+  --text-inverse: #ffffff;           /* White text for dark backgrounds */
+
+  /* Borders & Shadows */
+  --border-color: #ddd;  
+  --border-accent: #750778;             /* Light border around buttons/cards */
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Smooth drop shadow */
+
+  /* Status Colors (optional for future use) */
+  --success-color: #3ebd93;
+  --error-color: #f56565;
+  --warning-color: #f6ad55;
+  --info-color: #4299e1;
+
+--bg-circle-start: #310e68bd;
+  --bg-circle-end: #5f0f40bd;
+
+  /* CTA Buttons */
+  --cta-bg: var(--secondary-color); 
+  --cta-hover: #5e0b67;
+  --cta-text: var(--text-inverse);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.4s ease;
+}
+
+/* animation */
+/* fade In */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-opacity{
+    animation: fadeInOpacity 0.8s ease-out forwards;
+}
+
+
+.float-up-down {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: slide in slightly */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOpacity{
+     0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: slide in slightly */
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+}
+
+/* 🔁 Smooth Up & Down Infinite Animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+.fade-in.delay-1 {
+  animation-delay: 0.2s;
+}
+.fade-in.delay-2 {
+  animation-delay: 0.4s;
+}
+.fade-in.delay-3 {
+  animation-delay: 0.6s;
+}
+.fade-in.delay-4 {
+  animation-delay: 0.8s;
+}
+.fade-in.delay-5 {
+  animation-delay: 1s;
+}
+
+html {
+  font-size: 10px;
+   font-family: 'Inter', sans-serif;
+
+}
+
+body {
+  width: 100%;
+  background: var(--light-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}

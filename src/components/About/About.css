@@ -1,0 +1,290 @@
+#main {
+  position: relative;
+  padding-top: 0rem;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.maincont {
+  width: 50%;
+  height: 44rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mainleftcont {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  margin-left: 26rem;
+}
+
+.head {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.head span {
+  color: var(--heading-highlight);
+}
+
+.para {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  line-height: 1.5;
+  color: var(--primary-text);
+}
+
+.button {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.button a {
+  padding: 1.2rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: var(--cta-bg);
+  color: var(--cta-text);
+  display: inline-flex;
+  align-items: center;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+.button a:nth-child(2) {
+  background-color: transparent;
+  color: var(--primary-text);
+  border: 1.5px solid var(--cta-bg);
+}
+
+.button a:hover {
+  color: var(--text-inverse);
+ background-color: var(--heading-highlight);
+}
+
+.button a svg {
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.mainright {
+  display: flex;
+  justify-content: center;
+}
+
+.mainimg {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(316deg, var(--bg-circle-start) 0%, var(--bg-circle-end) 74%);
+  z-index: 1;
+}
+
+.mainimg img {
+  width: 160%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(0.2);
+  transform: translateY(-10%);
+  z-index: 1;
+}
+
+#main-bot {
+  width: 100%;
+  margin-top: 7rem;
+  position: relative;
+}
+
+.main-bot {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-bot-left {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+}
+
+.main-bot .line {
+  width: 12rem;
+  position: relative;
+  bottom: 180%;
+  left: -20%;
+  transform: rotate(90deg);
+  border-top: 0.5px solid var(--border-accent);
+}
+
+.navsocial .navul {
+  list-style: none;
+  padding: 0;
+  margin-left: -3.5rem;
+}
+
+.navul .navitem {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+
+.navul .navitem a {
+  color: var(--primary-text);
+  transition: color 0.3s ease;
+}
+
+.navul .navitem a:hover {
+  color: var(--cta-bg);
+}
+
+.main-bot-right {
+  width: 82%;
+}
+
+.mainbotdiv {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.mbd {
+  width: 26rem;
+  min-height: 20rem;
+}
+
+.mbd-head h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+}
+
+.mbd-head span {
+  color: var(--heading-highlight);
+}
+
+.mbd-icon {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--skill-icon-color);
+}
+
+.mbd-icon svg:hover {
+  transform: scale(1.15);
+  transition: all 0.2s ease;
+}
+
+.mbd-para {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: var(--text-primary);
+}
+
+
+.mbd-button {
+  margin-top: 1rem;
+}
+
+.mbd-button a {
+  color: var(--primary-text);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mbd-button a span {
+  border-bottom: 1px solid var(--cta-bg);
+}
+
+.mbd-list {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.mbd-list li {
+  margin-top: 0.8rem;
+}
+
+.main-bot .line2 {
+  position: absolute;
+  width: 10%;
+  bottom: 20%;
+  transform: rotate(0deg);
+  left: 75%;
+}
+
+@media (max-width: 992px) {
+  .maincont {
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .mainleftcont {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mainimg {
+    margin: 2rem auto 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .mainimg img {
+    width: 115%;
+  }
+
+  .main-bot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-bot-left,
+  .main-bot-right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .mainbotdiv {
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .mbd {
+    margin: 0 auto;
+  }
+}
